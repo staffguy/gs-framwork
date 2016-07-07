@@ -1,0 +1,10 @@
+[01-Apr-2016 03:25:46 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:27:31 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:27:37 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:29:06 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:31:45 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:32:45 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[01-Apr-2016 03:34:22 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/index.php on line 24
+[05-Jul-2016 00:51:05 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/404.php on line 19
+[05-Jul-2016 16:38:39 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/404.php on line 19
+[05-Jul-2016 21:02:54 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/jguy/public_html/salonsabina/wp-content/themes/gs_framework/404.php on line 19

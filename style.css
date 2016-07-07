@@ -1,0 +1,1079 @@
+/*
+Theme Name: Global Solutions Framework
+Theme URI: https://gsolution.co.il/framework/
+Author: Guy Shtukater
+Author URI: https://gsolution.co.il/
+Description: Custom framework theme for develop new websites for Global Solution Clients Needs Especialy
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: gs_framework
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Alef:400,700&subset=latin,hebrew);
+body,h1,h2,h3,h4,h5,p,a {font-family: 'Alef', sans-serif !important;}
+p{font-size: large;}
+/* RESET */
+* {
+    outline: none;
+}
+.fa{
+	padding:6px;
+}
+body{margin:0;}
+body.custom-background{
+   // background-position: 0 32px !important;
+}
+.container-fluid{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Main Page */
+
+/* Layout */
+.main-wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+	overflow: hidden;
+}
+/* Header */
+header{
+    min-height: 182px;
+    max-height: 182px;
+	//overflow: hidden;
+}
+.header-image{
+    z-index: -1;
+    position: absolute;
+	min-height: 182px;
+}
+header .container{
+    padding-top:15px;
+}
+.dropdown-menu>li>a{
+	font-size: larger;
+}
+.social-links-menu{
+    margin-top: 0px
+}
+.social-links-menu .widget-area .widget{
+    float: left !important;
+    direction: ltr;
+	padding: 0 1px;
+}
+.social-links-menu .widget.widget_gs_framework_callus_widget{
+	width:28%;
+}
+.social-links-menu .widget.widget_gs_framework_callus_widget a{
+	color:#fff;
+	font-size:1.2vw;
+	font-family:sans-serif !important;
+}
+.lang-item.lang-item-he:before{
+	
+}
+   
+/* RTL */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    float:right !important;
+}
+.gs-framework-primary-menu li{
+    float:left;
+}
+#primary .item-title{
+    color:#801c65;
+    text-align: right;
+	font-size: -webkit-xxx-large;
+}
+.menu-item-has-children:hover .dropdown-menu{
+	display:block;
+	text-align: right;
+}
+.dropdown-menu{
+	right:0;
+	left:inherit !important;
+	-webkit-trasition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+}
+.dropdown-menu{
+	right:0;
+	left:inherit !important;
+	-webkit-trasition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+}
+.menu-item:first-of-type:after{
+	display:none;
+}
+.menu-item:after{
+	content: '|';
+    position: absolute;
+    color: #fff;
+    top: 17px;
+	margin: -2px;
+}
+/* Navigation Menu */
+.navigation-menu{
+    border-top:1px solid #94377f;
+    margin-top: 16px;
+}
+nav.navbar-default{
+    border:0;
+    background: none;
+	margin-bottom: 5px;
+}
+.navbar-default .navbar-nav>li>a:first-child{
+	content:'';
+}
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-size: 2.5vh;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: #eee;
+    ​-webkit-trasition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+}
+.navbar-nav {
+    margin: 7.5px 0px;
+    padding: 0;
+}
+.navbar-collapse.navbar-ex1-collapse.in{
+    border:0;
+    box-shadow: inherit;
+    background: #fff;
+}
+
+/* Slider */
+.first-row.first-slider {
+    overflow: hidden;
+}
+.hot-sale-banner.container{
+    position: absolute;
+	margin-top: -15.2%;
+}
+.hot-sale-banner .widget-area{
+	float: left !important;
+    position: relative;
+    z-index: 9999;
+}
+.second-row.second-slider {
+    width: 100%;
+    margin-top: -9.7%;
+    z-index: 100;
+}
+.second-row.second-slider .slider-content {
+    position: absolute;
+    top: 136px;
+    z-index: 100;
+    width: 100%;
+}
+.second-row.second-slider .cycloneslider-caption{
+    padding:0;
+}
+.second-row.second-slider .cycloneslider-caption-title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.6vw
+}
+.second-row.second-slider .cycloneslider-caption-description{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6vw
+}
+body.home .widget-title, .home-page-title{
+    color: #801c65;
+    font-size: 5vh;
+	text-align: center;
+}
+body.home .srp-widget-small-title-text {
+    text-align: center;
+	color:#801c65;
+	color: #801c65;
+    font-size: 4vh;
+    font-family: fantasy;
+	letter-spacing: 12px;
+}
+body.home .textwidget {
+    text-align: center;
+}
+body.home .content-row.container {
+    margin-top: 45px;
+}
+ul.home_page_text li{
+	text-align: justify;
+	font-size: large
+}
+/* ITEM Conditions */
+#circle {
+	width: 80px;
+	height: 80px;
+	left: 0;
+    position: absolute;
+}
+body.home .condition {
+    position: absolute;
+    left: 93px;
+    top: 23px;
+    z-index: 9999;
+}
+.condition {
+    position: absolute;
+    left: 73px;
+    top: -19px;
+    z-index: 9999;   
+}
+.new:before{
+	content:" ";
+    background-image:	url(../gs_framework/images/condition.png);
+	width: 80px;
+	height: 80px;
+	position: absolute;
+   
+}
+
+.sale:before{
+    content:" ";
+    background-image:	url(../gs_framework/images/condition.png);
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	background-position: 0 -68%;
+   
+
+}
+.hit:before{
+    content:" ";
+    background-image:	url(../gs_framework/images/condition.png);
+	width: 80px;
+	height: 84px;
+	position: absolute;
+    background-position: 0 -53%;
+    
+
+}
+.hot:before{
+    content:" ";
+    background-image:	url(../gs_framework/images/condition.png);
+	width: 80px;
+	height: 84px;
+	position: absolute;
+    background-position: 0 -37%;
+
+}
+/* Catalog Products SRP Plugin */
+.srp-post-title{
+	visibility:hidden;
+}
+.srp-widget-title{
+	color:#636263 !important;
+}
+.third-row.bridal-dress-collections{
+    background-image: url('../gs_framework/images/bridal-dress-coll-back-decor.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: auto;
+    width: 100%;
+	clear: both;
+}
+.third-row.bridal-dress-collections .srp-thumbnail-box, .fourth-row.evening-dress-collections .srp-thumbnail-box{
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0px 8px 10px #888888;
+    padding: 10px 5px;
+    background: #fff;
+	width: 300px;
+	margin: 0 auto;
+}
+.srp-thumbnail-box a img{
+	width:100%;
+}
+.third-row.bridal-dress-collections .srp-post-content, .fourth-row.evening-dress-collections .srp-post-content {
+    background: #fff;
+    padding: 10px 10px 0;
+    width: 300px;
+    box-shadow: 0px 8px 10px #888888;
+	margin-left: 1px;
+}
+.third-row.bridal-dress-collections .frame,.fourth-row.evening-dress-collections .frame {
+    height: 35px;
+    background: #fff;
+    width: 300px;
+    box-shadow: 0px 8px 10px #888888;
+	margin: 0 auto;
+} 
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image, img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+	position:relative !important;
+}
+.third-row.bridal-dress-collections .srp-widget-container,.fourth-row.evening-dress-collections .srp-widget-container{
+    margin: 0 7%;
+} 
+.third-row.bridal-dress-collections .contactus-arrow{
+	
+}
+.third-row.bridal-dress-collections .contactus-arrow .contactus-arrow-box {
+    float: left;
+	margin: 20px 0px -64px 30px;
+}
+.third-row.bridal-dress-collections .contactus-arrow .contactus-arrow-box a{
+    color:#636263;
+	font-size: large;
+}
+.third-row.bridal-dress-collections .contactus-arrow .contactus-arrow-box a span{
+    color:#801c65;
+	font-size: large;
+}
+.third-row.bridal-dress-collections .contactus-arrow .contactus-arrow-box:after {
+	content: url('../gs_framework/images/contact-arrow.png');
+    position: absolute;
+    margin: 25px 32px 0;
+}
+.btn-default{
+    color:#801c65;
+    border: 1px #801c65 solid;
+    background-color: inherit;
+    border-radius: inherit;
+    margin: 20px;
+	transition: all .80s;
+}
+.fourth-row.evening-dress-collections{
+    background: #c1c1c1;
+    //background-image: url('../gs_framework/images/bridal-dress-coll-back-decor.png');
+    //background-repeat: no-repeat;
+    //background-position: top center;
+    height: auto;
+    width: 100%;
+	clear: both;
+}
+.fourth-row.evening-dress-collections .widget-area.container .widget.widget_specialrecentpostsFree{
+    //float: right;
+}
+.five-row.contact-form{
+    background-image: url('../gs_framework/images/footer-back.png');
+	background-size: cover;
+    width: 100%;
+    background-position: bottom center;
+    clear: both;
+}
+/* Same Style For Contact form */
+input[type="reset"], input[type="submit"] {
+	float:left;
+}
+/* Contact Form */
+#contentRight, #contentLeft{
+	width: 50%;
+	float: right;
+
+}
+
+.five-row.contact-form .form-wrapper {
+    background-image: url('../gs_framework/images/contact-back.png');
+	padding: 15% 28px 60px 130px;
+    background-position: top center;
+    background-repeat: no-repeat;
+	background-size: contain;
+}
+
+input,
+textarea{  
+    margin-bottom: 15px;
+    padding: 4.1%;
+    float: right;
+    width: 100%;
+	border: 1px solid #ccc;
+}
+input.wpcf7-form-control.wpcf7-date.wpcf7-validates-as-required.wpcf7-validates-as-date{
+	padding: 3.7%;
+	margin-bottom: 15px;
+	width: 100%;
+}
+textarea{
+    max-height: 150px;
+    max-width: 461px;
+	height: 139px;
+}
+
+body.home button[type='submit']{
+    background: url('../gs_framework/images/submit-btn.png') top right no-repeat;
+    border: 0;
+    height: 132px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 3%;
+    float: left;
+    width: 178px; 
+	
+}
+span.wpcf7-not-valid-tip {
+    display:none;
+}
+span.mauticform-errormsg {
+    margin: -38px 21px;
+    z-index: 999;
+    position: relative;
+    float: right;
+	color:red;
+}
+.last-row.about-contact.container .widget-area .widget h2, .last-row.about-contact.container .widget-area .widget .textwidget {
+	text-align:right;
+}
+.last-row.about-contact{
+    position:relative;
+    z-index:9;
+    margin-bottom:22px;
+	background: #fff;
+}
+.last-row.about-contact .widget-area{
+    text-align: right;
+}
+.last-row.about-contact .widget-area .widget-title{
+    font-size: 2.5vh;
+}
+.widget.widget_tag_cloud .tagcloud a{
+    border: 1px solid #ccc;
+    padding: 7px;
+    float: right;
+    margin: 1px;
+    color: #6f6f6f;
+}
+.last-row.about-contact .widget-area.col-lg-4:last-of-type .widget.widget_text:first-child{
+	margin-bottom:30px;
+}
+.swan-decor {
+    position: absolute;
+}
+.swan-decor::before{
+    content: '';
+    background-image: url('../gs_framework/images/subscribe-image.png');
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 328px;
+    float: right;
+    margin-top: -93px;
+    position: relative;
+    margin-right: -62%;
+}
+.es_lablebox{
+	display:none;
+}
+.es_textbox_class{
+	border:1px solid #801c65;
+	padding: 6px;
+}
+.es_textbox {
+    padding-bottom: 10px;
+    width: 60%;
+    float: right;
+}
+.es_button{
+    padding: 0 !important;
+}
+.es_button .es_textbox_button{
+	background-image:url('../gs_framework/images/subscribe-btn.jpg');
+	border:0;
+	background-repeat:no-repeat;
+	width: 70px;
+    height: 36px;
+}
+.footer-row-map{
+    position:relative;
+    z-index:10;
+    background: #fff;
+}
+.footer-row-map #mymap{
+	width:100%;
+	height:200px;
+}
+/* Custom Category category.php */
+.category-image {
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px #888888;
+	margin-bottom: 20px;
+}
+/* Page */
+#primary {
+    background: #fff;
+    margin-top: 20px;
+    padding: 30px 0 70px;
+}
+
+
+
+/* ITEM PAGE single.php */
+.second-row.item-thumbnails{
+	margin-top:10px;
+}
+.second-row.item-thumbnails .item-thumbnail{
+	padding:0px;
+}
+.second-row.item-thumbnails .item-thumbnail{
+	padding:0 0px 0 5px;
+}
+.second-row.item-thumbnails .item-thumbnail:last-of-type{
+	padding: 0px 5px 0 0px;
+} 
+body.single input[type="reset"], body.single input[type="submit"] {
+    margin-left: 15px;
+    background: #801c65;
+    border: 0;
+    color: #fff;
+    padding: 10px 20px;
+	width: 28%;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:before{
+	content:'||' !important;
+	height:20px !important;
+	width:20px !important;
+}
+
+
+
+div#jkit-lightbox-bg {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+div#jkit-lightbox-content {
+	display: none;
+    position: fixed;
+    border: none;
+    left: 10%;
+    top: 100px;
+    z-index: 10001;
+    background: #fff;
+    padding: 10px;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+div#jkit-lightbox-title {
+	display: none;
+	position: fixed;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+	z-index: 10002;
+	text-align: left;
+}
+
+div#jkit-lightbox-nav {
+	display: none;
+	position: fixed;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+	z-index: 10003;
+	text-align: right;
+	width: 50px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+span#jkit-lightbox-nav-next {
+	margin-right: 20px;
+}
+
+span#jkit-lightbox-nav-prev {
+	margin-right: 10px;
+}
+#back-to-top-scroller {
+	border: 1px solid #ccc;
+    background: #ccc;
+    padding: 0px 25px;
+    float: right;
+    margin-right: 10%;
+    font-size: 48px;
+}
+.scroll-to-top:before{
+	content:'^'
+}
+/* Decoration
+ * ---------------------------------- */
+div#decorations {
+    width: 100%;
+    height: 600px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+div#decorations2 {
+	position: absolute;
+    margin-top: 192px;
+    width: 100%;
+	display:none;
+}
+
+.page-front .decor__2,
+.page-front .decor__5,
+.page-front .decor__7,
+.page-front .decor__8,
+.page-front .decor__9,
+.page-front .decor__10,
+.page-front .decor__12,
+.page-front .decor__13,
+.page-front .decor__14,
+.page-front .decor__15,
+.page-front .decor__16,
+.page-front .decor__17,
+.page-front .decor__18,
+.page-front .decor__19,
+.page-front .decor__20,
+.page-front .decor__21,
+.page-front .decor__22,
+.page-front .decor__23 {
+  z-index: 170;
+}
+.page-front .decor__2,
+.page-front .decor__5,
+.page-front .decor__7,
+.page-front .decor__8,
+.page-front .decor__9,
+.page-front .decor__10,
+.page-front .decor__12,
+.page-front .decor__13,
+.page-front .decor__14,
+.page-front .decor__15,
+.page-front .decor__16 {
+  visibility: hidden;
+}
+.csstransitions .page-front .decor__2, .csstransitions
+.page-front .decor__5, .csstransitions
+.page-front .decor__7, .csstransitions
+.page-front .decor__8, .csstransitions
+.page-front .decor__9, .csstransitions
+.page-front .decor__10, .csstransitions
+.page-front .decor__12, .csstransitions
+.page-front .decor__13, .csstransitions
+.page-front .decor__14, .csstransitions
+.page-front .decor__15, .csstransitions
+.page-front .decor__16 {
+  visibility: visible;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  opacity: 0;
+}
+.page-front.is-loaded .decor__2,
+.page-front.is-loaded .decor__5,
+.page-front.is-loaded .decor__7,
+.page-front.is-loaded .decor__8,
+.page-front.is-loaded .decor__9,
+.page-front.is-loaded .decor__10,
+.page-front.is-loaded .decor__12,
+.page-front.is-loaded .decor__13,
+.page-front.is-loaded .decor__14,
+.page-front.is-loaded .decor__15,
+.page-front.is-loaded .decor__16 {
+  visibility: visible;
+}
+.csstransitions .page-front.is-loaded .decor__2, .csstransitions
+.page-front.is-loaded .decor__5, .csstransitions
+.page-front.is-loaded .decor__7, .csstransitions
+.page-front.is-loaded .decor__8, .csstransitions
+.page-front.is-loaded .decor__9, .csstransitions
+.page-front.is-loaded .decor__10, .csstransitions
+.page-front.is-loaded .decor__12, .csstransitions
+.page-front.is-loaded .decor__13, .csstransitions
+.page-front.is-loaded .decor__14, .csstransitions
+.page-front.is-loaded .decor__15, .csstransitions
+.page-front.is-loaded .decor__16 {
+  opacity: 1;
+}
+
+.decor {
+  position: absolute;
+  left: 50%;
+  background-repeat: no-repeat;
+}
+.decor{
+	
+}
+.decor_1,
+.decor_1-alter {
+  top: -52px;
+  width: 118px;
+  height: 112px;
+  margin: 189px 0px 0px -810px;
+  background-image: url(../gs_framework/images/decor/decor_1.png);
+}
+
+.decor__1-alter {
+  background-image: url(http://www.salon-love-forever.ru/css/decor/1-alter.png);
+}
+
+.decor_2 {
+  top: 425px;
+  width: 130px;
+  height: 107px;
+  margin: 186px 0px 0px 12px;
+  background-image: url(../gs_framework/images/decor/decor_2.png);
+}
+.page-front .decor__2 {
+  top: 454px;
+  margin-left: -685px;
+}
+.page-vacuum .decor__2 {
+  top: 61%;
+  margin-top: -53.5px;
+}
+
+.decor_3 {
+  top: 770px;
+  width: 107px;
+  height: 144px;
+  margin: 141px 0px 0 772px;
+  background-image: url(../gs_framework/images/decor/decor_3.png);
+}
+
+.decor_4 {
+  top: 1245px;
+  width: 45px;
+  height: 52px;
+  margin: 298px 0 0 614px;
+  background-image: url(../gs_framework/images/decor/decor_4.png);
+}
+
+.decor_5 {
+  top: 215px;
+  width: 28px;
+  height: 27px;
+  margin: 136px 0 0 -528px;
+  background-image: url(../gs_framework/images/decor/decor_5.png);
+}
+.page-front .decor__5 {
+  top: 270px;
+  margin-left: 540px;
+}
+.page-vacuum .decor__5 {
+  top: 38%;
+  margin-top: -82.5px;
+}
+
+.decor_6 {
+  top: 1140px;
+  width: 105px;
+  height: 108px;
+  margin: -101px 0 0 -506px;
+  background-image: url(../gs_framework/images/decor/decor_6.png);
+}
+
+.decor_7 {
+  top: 180px;
+  width: 137px;
+  height: 147px;
+  margin: -148px 0 0 557px;
+  background-image: url(../gs_framework/images/decor/decor_7.png);
+}
+.page-vacuum .decor_7 {
+  top: 32%;
+  margin-top: -73.5px;
+}
+
+.decor_8 {
+  top: 125px;
+  width: 123px;
+  height: 86px;
+  margin: -147px 0 0 -136px;
+  background-image: url(../gs_framework/images/decor/decor_8.png);
+}
+.page-vacuum .decor_8 {
+  top: 21%;
+  margin-top: -43px;
+}
+
+.decor_9 {
+  top: 15px;
+  width: 49px;
+  height: 71px;
+  margin: 3px 0 0 60px;
+  background-image: url(../gs_framework/images/decor/decor_9.png);
+}
+.page-front .decor_9 {
+  top: 215px;
+  margin-left: 80px;
+}
+
+.decor_10 {
+  top: 755px;
+  width: 96px;
+  height: 101px;
+  margin: -23px 0 0px -863px;
+  background-image:  url(../gs_framework/images/decor/decor_10.png);
+}
+.page-front .decor_10 {
+  top: 765px;
+  margin-left: 455px;
+}
+
+.decor_11 {
+  top: 205px;
+  width: 1107px;
+  height: 595px;
+  margin-left: -510px;
+  background-image: url(../gs_framework/images/decor/decor_11.png);
+}
+.page-vacuum .decor_11 {
+  top: 64%;
+  margin-top: -297.5px;
+}
+
+.decor__12 {
+  top: 275px;
+  width: 274px;
+  height: 280px;
+  margin-left: -480px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/12.png);
+}
+
+.decor__13 {
+  top: 570px;
+  width: 256px;
+  height: 242px;
+  margin-left: 135px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/13.png);
+}
+
+.decor__14 {
+  top: 505px;
+  width: 278px;
+  height: 48px;
+  margin-left: 155px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/14.png);
+}
+
+.decor__15 {
+  top: 530px;
+  width: 397px;
+  height: 348px;
+  margin-left: -505px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/15.png);
+}
+
+.decor__16 {
+  top: 235px;
+  width: 128px;
+  height: 133px;
+  margin-left: 340px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/16.png);
+}
+
+.decor__17 {
+  width: 136px;
+  height: 122px;
+  z-index: 10;
+  margin: 0 240px 0 0px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/17.png);
+}
+
+.decor__18 {
+  top: 0px;
+  width: 101px;
+  height: 103px;
+  z-index: 999;
+  margin: 0px 0 0 -696px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/18.png);
+}
+
+.decor__19 {
+  top: 0px;
+  width: 72px;
+  height: 69px;
+  z-index: 10;
+  margin: 0px 0 0 -158px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/19.png);
+}
+
+.decor__20 {
+  top:0px;
+  width: 65px;
+  height: 81px;
+  z-index: 10;
+  margin: 0px 0 0 168px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/20.png);
+}
+
+.decor__21 {
+  top: 0px;
+  width: 131px;
+  height: 134px;
+  margin: 0px 0 0 39px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/21.png);
+}
+
+.decor__22 {
+  top: 0px;
+  width: 58px;
+  height: 66px;
+  margin: 0px 0 0 -295px
+  background-image: url(http://www.salon-love-forever.ru/css/decor/22.png);
+}
+
+.decor__23 {
+  width: 42px;
+  height: 52px;
+  margin: -400px 0 0 0px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/23.png);
+}
+
+.decor__evening {
+  top: -73px;
+  left: -370px;
+  width: 1448px;
+  height: 317px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/drawing-evening.png);
+}
+
+.decor__wedding {
+  top: -2px;
+  left: 214px;
+  width: 483px;
+  height: 249px;
+  background-image: url(http://www.salon-love-forever.ru/css/decor/drawing-wedding.png);
+}
+
+.decor-love {
+  width: 78px;
+  height: 78px;
+  background: url(http://www.salon-love-forever.ru/css/decor/love.png) no-repeat;
+}
+
+.decor-marble {
+  width: 95px;
+  height: 91px;
+  background: url(http://www.salon-love-forever.ru/css/decor/marble.png) no-repeat;
+}
+
+.decor-sad {
+  width: 108px;
+  height: 108px;
+  background: url(http://www.salon-love-forever.ru/css/decor/unhappy.png) no-repeat;
+}
+/* Review Page */
+.fb-post.fb_iframe_widget {
+    padding: 0 0 20px 10px;
+}
+
+@media screen and (min-width: 44.375em){
+	.menu-toggle {
+		font-size: 16px;
+		font-size: 1.0rem;
+		margin: 1.3125em 0;
+		padding: 0.8125em 0.875em 0.6875em;
+	}    
+}
+@media (max-width: 1200px){
+	.five-row.contact-form .wpcf7-form .form-wrapper{
+		padding: 138px 34px 17px 112px;
+	}
+}
+@media (max-width: 992px){
+	.five-row.contact-form .wpcf7-form .form-wrapper {
+		padding: 104px 15px 17px 75px;
+	}
+	input.wpcf7-form-control.wpcf7-text, input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email, input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-required.wpcf7-validates-as-tel, textarea.wpcf7-form-control.wpcf7-textarea {
+		margin-bottom: 10px;
+		padding: 2%;
+	}
+	textarea.wpcf7-form-control.wpcf7-textarea{
+		max-height: 92px;
+		max-width: 368px;
+	}
+	#decorations2,.third-row.bridal-dress-collections .contactus-arrow{
+		display:none;
+	}
+	.third-row.bridal-dress-collections .srp-widget-container, .fourth-row.evening-dress-collections .srp-widget-container{
+		margin:0;
+	}
+	.srp-post-content-container {
+		//margin: 0 28%;
+	}
+}
+
+@media screen and (min-device-width: 315px) and (max-device-width: 768px) {
+	.navbar-default .navbar-nav>li>a {
+		color: inherit;
+	}	
+	.social-links-menu .widget.widget_gs_framework_callus_widget a span{
+		width: 152px;
+		font-size: 18px;
+		position: absolute;
+		margin: 22px -29px;
+		display: none;
+	}
+	.swan-decor {
+		position: absolute;
+		left: 0;
+	}
+	.swan-decor::before{
+		margin-right: -48%;
+	}
+	.third-row.bridal-dress-collections .srp-thumbnail-box, .fourth-row.evening-dress-collections .srp-thumbnail-box {
+		width: auto;
+	}
+	.third-row.bridal-dress-collections .frame, .fourth-row.evening-dress-collections .frame{
+		width: auto;
+	}
+	.five-row.contact-form .form-wrapper{
+		padding:30px 0;
+	}
+	.five-row.contact-form .form-wrapper {
+		background-position: -90px -87px;
+		background-size: cover;
+	}
+	#contentRight, #contentLeft {
+		width: 50%;
+		float: right;
+		padding: 0 5px;
+	}
+	body.single input[type="reset"], body.single input[type="submit"] {
+		width: 90%;
+	}
+	.fb-post.fb_iframe_widget{
+		padding:0;
+	}
+	.fb_iframe_widget_fluid span,.fb_iframe_widget iframe{
+		width:320px !important;
+	}
+}
+/* RTL */
+@media (min-width: 768px){
+	.navbar-header {
+		float: right;
+	}
+	.navbar-nav {
+		float: right;
+		margin: 0;
+                padding: 0;
+	}
+	.navbar-nav>li {
+		float: right;
+	}
+	
+}
